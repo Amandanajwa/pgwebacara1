@@ -1,59 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACARA 1|HTML CSS</title>
+    <title>Kabupaten Magelang</title>
+    <style>
+        /* Atur tampilan dasar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e9f9ee; /* hijau muda lembut */
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(180deg, #4CAF50, #2E7D32); /* hijau tua ke muda */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header h3 {
+            margin: 5px 0 0;
+            font-weight: normal;
+        }
+
+        /* KONTEN (dengan animasi fade-in) */
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        /* JUDUL TABEL DAN LIST */
+        h4 {
+            border-left: 5px solid #2E7D32;
+            padding-left: 10px;
+            margin-top: 30px;
+            color: #2E7D32;
+        }
+
+        /* TABEL */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #4CAF50; /* hijau */
+            color: white;
+        }
+
+        tr {
+            transition: all 0.3s ease;
+        }
+
+        tr:hover {
+            background-color: #c8f7d3;
+            transform: scale(1.02);
+        }
+
+        tr:nth-child(even) {
+            background: #f2fdf4; /* hijau sangat muda */
+        }
+
+        /* LIST */
+        ol {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        ol li {
+            transition: all 0.3s ease;
+        }
+
+        ol li:hover {
+            color: #2E7D32;
+            font-weight: bold;
+            transform: translateX(5px);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        /* LINK */
+        a {
+            color: #2E7D32;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #1b5e20;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    <main>
-        <!-- JUDUL -->
-        <h1 style="color: brown;">Kabupaten Magelang</h1>
-
-        <!-- SUB JUDUL -->
+    <!-- HEADER -->
+    <header>
+        <h1>Kabupaten Magelang</h1>
         <h3>Jawa Tengah</h3>
+    </header>
 
+    <main>
         <!-- DESKRIPSI -->
-        <p>Kota Magelang (bahasa Jawa: Hanacaraka : ꦩꦒꦼꦭꦁ, Pegon: ماڮٓلاڠ translit. Magêlang) adalah salah satu kota
+        <p>
+            Kota Magelang (bahasa Jawa: Hanacaraka : ꦩꦒꦼꦭꦁ, Pegon: ماڮٓلاڠ translit. Magêlang) adalah salah satu kota
             yang terletak di provinsi Jawa Tengah, Indonesia.
             Kota Magelang merupakan enklave dari Kabupaten Magelang, yang terletak pada jalan raya antara Kota
-            Semarang–Kota Yogyakarta.
-            Pada pertengahan tahun 2024, jumlah penduduk kota Magelang sebanyak 128.591 jiwa, dengan kepadatan penduduk
-            8.000 jiwa/km2.[1][3]</p>
-        <p>Letak Kota Magelang berada di bagian tengah Kabupaten Magelang.[4] Hal tersebut karena memang dulunya Kota
+            Semarang–Kota Yogyakarta. Pada pertengahan tahun 2024, jumlah penduduk kota Magelang sebanyak 128.591 jiwa,
+            dengan kepadatan penduduk 8.000 jiwa/km2.
+        </p>
+        <p>
+            Letak Kota Magelang berada di bagian tengah Kabupaten Magelang. Hal tersebut karena memang dulunya Kota
             Magelang adalah ibu kota dari Kabupaten Magelang sebelum mendapat kebijakan untuk mengurus rumah tangga
             sendiri sebagai sebuah kota baru. Kota Magelang memiliki posisi yang strategis, karena berada di jalur utama
             Semarang-Yogyakarta. Kota Magelang berada di 15 km sebelah Utara Kota Mungkid, 75 km sebelah selatan
-            Semarang, dan 43 km sebelah utara Yogyakarta.</p>
+            Semarang, dan 43 km sebelah utara Yogyakarta.
+        </p>
 
         <!-- TABEL JUMLAH PENDUDUK -->
-        <table border="1" width="100%" cellspacing="0" bgcolor="yellow"> 
+        <h4>Jumlah Penduduk</h4>
+        <table>
             <tr>
                 <th>No</th>
                 <th>Jenis Kelamin</th>
                 <th>Jumlah</th>
             </tr>
-            <tr align="center">
+            <tr>
                 <td>1</td>
                 <td>Laki-laki</td>
                 <td>673.459 jiwa</td>
             </tr>
-
             <tr>
-            <tr align="center">
                 <td>2</td>
                 <td>Perempuan</td>
                 <td>663.952 jiwa</td>
             </tr>
-            </tr>
             <tr>
-            <tr align="center">
                 <td>3</td>
                 <td>Total</td>
                 <td>1.337.411 jiwa</td>
-            </tr>
             </tr>
         </table>
 
@@ -61,27 +185,35 @@
         <h4>Kecamatan</h4>
         <ol>
             <li>Bandongan</li>
-            <li> Borobudur</li>
-            <li> Candimulyo</li>
-            <li> Dukun</li>
-            <li> Grabag</li>
-            <li> Kajoran</li>
-            <li> Kaliangkrik</li>
-            <li> Mertoyudan</li>
-            <li> Mungkid</li>
-            <li> Muntilan</li>
-            <li> Ngluwar</li>
-            <li> Ngablak</li>
-            <li> Njarum</li>
-            <li> Salam</li>
-            <li> Salaman</li>
-            <li> Sawangan</li>
-            <li> Secang</li>
-            <li> Srumbung</li>
-            <li> Tegalrejo</li>
-            <li> Tempuran</li>
-            <li> Windusari </li>
+            <li>Borobudur</li>
+            <li>Candimulyo</li>
+            <li>Dukun</li>
+            <li>Grabag</li>
+            <li>Kajoran</li>
+            <li>Kaliangkrik</li>
+            <li>Mertoyudan</li>
+            <li>Mungkid</li>
+            <li>Muntilan</li>
+            <li>Ngluwar</li>
+            <li>Ngablak</li>
+            <li>Pakis</li>
+            <li>Salam</li>
+            <li>Salaman</li>
+            <li>Sawangan</li>
+            <li>Secang</li>
+            <li>Srumbung</li>
+            <li>Tegalrejo</li>
+            <li>Tempuran</li>
+            <li>Windusari</li>
         </ol>
+
+        <!-- WEBSITE RESMI -->
+        <h4>Website Resmi</h4>
+        <p>
+            <a href="https://www.magelangkab.go.id" target="_blank">
+                Pemerintah Kabupaten Magelang
+            </a>
+        </p>
     </main>
 </body>
 
